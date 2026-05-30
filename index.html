@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kishalaya Sarangi — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Kishalaya<span>.dev</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">🚀 120 Days of Code — Day 30</div>
+      <h1>Hi, I'm <span>Kishalaya Sarangi</span></h1>
+      <p class="hero-title">B.Tech Mechanical Engineering · NIT Rourkela · Batch 2025–2029</p>
+      <p class="hero-desc">Passionate about technology and software development. Currently on a 120-day coding challenge — building and shipping one project every single day.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span>30</span>
+          <label>Projects Built</label>
+        </div>
+        <div class="hero-stat">
+          <span>30</span>
+          <label>Days Streak</label>
+        </div>
+        <div class="hero-stat">
+          <span>5</span>
+          <label>Languages</label>
+        </div>
+        <div class="hero-stat">
+          <span>90</span>
+          <label>Days Left</label>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="https://github.com/kishalayasarangi" target="_blank" class="btn-primary">View GitHub</a>
+        <a href="#projects" class="btn-secondary">See Projects</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-dot red"></div>
+        <div class="code-dot yellow"></div>
+        <div class="code-dot green"></div>
+        <div class="code-lines">
+          <p><span class="kw">const</span> kishalaya = {</p>
+          <p>&nbsp;&nbsp;role: <span class="str">"Developer"</span>,</p>
+          <p>&nbsp;&nbsp;college: <span class="str">"NIT Rourkela"</span>,</p>
+          <p>&nbsp;&nbsp;streak: <span class="num">30</span>,</p>
+          <p>&nbsp;&nbsp;goal: <span class="str">"120 days"</span>,</p>
+          <p>&nbsp;&nbsp;status: <span class="str">"Building..."</span></p>
+          <p>}</p>
+          <p class="comment">// One project a day 🚀</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a first-year Mechanical Engineering student at NIT Rourkela with a deep passion for technology and software development. While my core degree is Mechanical, I'm building my tech skills through consistent daily practice.</p>
+        <p>I started the <strong>120 Days of Code</strong> challenge to build a strong GitHub profile, learn multiple technologies, and figure out which domain of tech excites me most — whether that's web development, machine learning, DevOps, or something else entirely.</p>
+        <p>Currently at <strong>Day 30</strong> with 30 projects shipped. Every project is pushed to GitHub, documented, and live.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <span>🎓</span>
+          <h4>Education</h4>
+          <p>B.Tech Mechanical Engineering<br/>NIT Rourkela · 2025–2029</p>
+        </div>
+        <div class="about-card">
+          <span>💻</span>
+          <h4>Focus</h4>
+          <p>Full Stack Development<br/>DSA · APIs · Automation</p>
+        </div>
+        <div class="about-card">
+          <span>🎯</span>
+          <h4>Goal</h4>
+          <p>Tech Internship 2026<br/>120 Projects on GitHub</p>
+        </div>
+        <div class="about-card">
+          <span>📍</span>
+          <h4>Location</h4>
+          <p>Rourkela, Odisha<br/>India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>JavaScript</span>
+          <span>C++</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools & Tech</h3>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span>
+          <span>VS Code</span><span>REST APIs</span>
+          <span>BeautifulSoup</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Concepts</h3>
+        <div class="skill-tags">
+          <span>DSA</span><span>OOP</span>
+          <span>Web Scraping</span><span>DOM Manipulation</span>
+          <span>LocalStorage</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Phase 1 Projects</h2>
+    <p class="section-sub">Days 1–30 · Python · JavaScript · HTML/CSS · APIs · DSA</p>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All (30)</button>
+      <button class="filter-btn" onclick="filterProjects('python', this)">Python</button>
+      <button class="filter-btn" onclick="filterProjects('web', this)">Web</button>
+      <button class="filter-btn" onclick="filterProjects('dsa', this)">DSA</button>
+      <button class="filter-btn" onclick="filterProjects('api', this)">APIs</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section alt" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Open to internships, collaborations and tech conversations!</p>
+    <div class="contact-links">
+      <a href="https://github.com/kishalayasarangi" target="_blank" class="contact-btn github">
+        <span>⌨</span> GitHub
+      </a>
+      <a href="mailto:sarangikishalaya70@gmail.com" class="contact-btn email">
+        <span>✉</span> Email
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with HTML & CSS · Day 30 of 120 · Kishalaya Sarangi · NIT Rourkela</p>
+    <p style="margin-top:6px;color:#404050;">30 days down. 90 to go. 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
